@@ -23,11 +23,11 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path='/' element={<Navigate to='/login' replace />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/signup' element={<SignUpPage />} />
 
         <Route element={<DashboardLayout />}>
-          <Route path='/' element={<Navigate to='/dashboard' replace />} />
           <Route path='/dashboard' element={<DashboardPage />} />
           <Route path='/students' element={<StudentsPage />} />
           <Route path='/teachers' element={<TeachersPage />} />
