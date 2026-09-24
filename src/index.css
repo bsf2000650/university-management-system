@@ -255,8 +255,14 @@ code {
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;}
+    border-color: var(--border, #e2e8f0);
+    outline-color: color-mix(in srgb, var(--ring, #818cf8) 50%, transparent);
+  }
   body {
-    @apply bg-background text-foreground;}
+    background-color: var(--background, #fff);
+    color: var(--foreground, #374151);
+  }
   html {
-    @apply font-sans;}} */
+    font-family: var(--font-sans, 'Geist Variable', sans-serif);
+  }
+}
