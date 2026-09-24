@@ -9,7 +9,7 @@ export interface Student {
   avatarColor: string; // tailwind bg class, e.g. "bg-blue-100 text-blue-600"
   rollNumber: string;
   program: string; // short code, e.g. "BSCS" — used on the attendance table
-  classGrade: string; // e.g. "Grade 12-A" — used on the roster table
+  classGrade?: string; // Legacy field for records saved before programs were introduced.
   guardianName: string;
   contactNumber: string;
   dateJoined: string; // e.g. "Aug 15, 2024"

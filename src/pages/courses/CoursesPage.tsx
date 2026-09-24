@@ -51,15 +51,15 @@ const initialCourses: Course[] = [
 ];
 
 const courseFields: DialogField[] = [
-  { name: "title", label: "Course Title", required: true },
-  { name: "detail", label: "Course Description", type: "textarea", required: true },
-  { name: "code", label: "Course Code", required: true },
-  { name: "instructor", label: "Assigned Instructor", required: true },
-  { name: "department", label: "Department", required: true },
-  { name: "enrolled", label: "Enrolled Students", type: "number", required: true },
-  { name: "capacity", label: "Course Capacity", type: "number", required: true },
-  { name: "schedule", label: "Schedule", required: true },
-  { name: "time", label: "Class Time", required: true },
+  { name: "title", label: "Course Title", required: true, placeholder: "e.g. Introduction to Computer Science", fullWidth: true },
+  { name: "detail", label: "Course Description", type: "textarea", required: true, placeholder: "Briefly describe the course topics and learning outcomes." },
+  { name: "code", label: "Course Code", required: true, placeholder: "e.g. CS-101" },
+  { name: "instructor", label: "Assigned Instructor", required: true, placeholder: "e.g. Dr. Sarah Jenkins" },
+  { name: "department", label: "Department", required: true, placeholder: "e.g. Computer Science" },
+  { name: "enrolled", label: "Enrolled Students", type: "number", required: true, placeholder: "e.g. 24" },
+  { name: "capacity", label: "Course Capacity", type: "number", required: true, placeholder: "e.g. 30" },
+  { name: "schedule", label: "Schedule", required: true, placeholder: "e.g. Mon, Wed, Fri" },
+  { name: "time", label: "Class Time", required: true, placeholder: "e.g. 09:00 - 10:30 AM" },
 ];
 
 type View = "courses" | "enrollments";
